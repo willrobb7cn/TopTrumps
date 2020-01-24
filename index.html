@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Top Trumps</title>
+</head>
+
+<body>
+    <div class="wrapper" id="panel">
+        <div>
+            <h1 id="title">Top Trumps</h1>
+        </div>
+        <div id="startGame">
+            <input type="button" value="Start Game">
+        </div>
+        <div id="innerPanel">
+            <div id="user1panel">
+                <h2 id="user1Card">User 1 Active Card</h2>
+                <h3 id="user1stats"></h3>
+                <img src="" alt="card" class="card" id="card-1">
+            </div>
+            <div id="user2panel">
+                <h2 id="user2Card">User 2 Active Card</h2>
+                <h3 id="user2stats"></h3>
+                <img src="" alt="card" class="card" id="card-2">
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="boats">
+                <!-- <label for="">Pick your stat:</label> -->
+                <!-- target the values  -->
+                <select name="stats" id="statSelect">
+                    <option value="">--which stat would you like to play?--</option>
+                    <option data-attribute="attack">attack</option>
+                    <option data-attribute=""="defence">defence</option>
+                    <option data-attribute=""="rating">rating</option>
+                </select>
+            </div>
+            <div id="ting">
+                <div id="cardsInDeck1">Cards in your deck</div>
+                <div id="results">Results</div>
+                <!-- <p id="resultsp"></p> -->
+                
+                <div id="cardsInDeck2">Cards in your deck</div>
+            </div>
+            <script src="app.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
